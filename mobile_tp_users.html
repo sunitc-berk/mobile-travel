@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users Table</title>
+    <title>Travel Location Details</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        .navbar-brand i {
-            font-size: 20px;
+        .btn-rectangle {
+            width: 100%;
+            padding-top: 70%;
+            position: relative;
+            margin-bottom: 10px;
         }
-        /* Set the width of the "Icon" column */
-        th.icon-column {
-            width: 6px;
+        .btn-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+        .custom-btn {
+            background-color: rgb(15, 108, 189);
+            border-color: rgb(15, 108, 189);
+            color: #ffffff;
+            overflow: hidden;
+            display: block;
+            height: 0;
+        }
+        .custom-btn .badge {
+            background-color: red;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            transform: translate(50%, -50%);
+            border-radius: 50%;
+        }
+        .custom-btn .fa-home {
+            font-size: 20px; /* Adjust the size of the home icon */
+        }
+        .custom-btn i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .btn-content span, .btn-content i {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /* Wrap text */
+        .navbar-brand {
+            white-space: normal;
         }
     </style>
 </head>
