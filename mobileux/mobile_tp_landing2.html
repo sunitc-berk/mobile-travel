@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Buttons with Icons and Badges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .btn-custom {
+            background-color: rgb(15, 108, 189);
+            color: white; /* Text color updated to white */
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 0.25rem;
+            margin: 10px;
+        }
+        .btn-custom .bi {
+            font-size: 2rem; /* Icon size */
+            margin-bottom: 0.5rem;
+        }
+        .badge-custom {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 0.25em 0.6em; /* Adjust padding to ensure badge size is appropriate */
+            font-size: 0.75rem; /* Adjust font size for the badge */
+        }
+        .btn-text {
+            /* Removed the white background and black color to match the button background */
+            font-size: 0.9rem; /* Adjust text size */
+            position: relative;
+            top: -10px; /* Adjust text position */
+        }
+        .row {
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            .btn-custom {
+                width: 45%; /* Adjust for smaller screens */
+                height: auto; /* Adjust height based on content */
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span class="btn-text">Documents</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">5</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-calendar-event"></i>
+                    <span class="btn-text">Events</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">8</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-megaphone"></i>
+                    <span class="btn-text">Announcements</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">2</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-link-45deg"></i>
+                    <span class="btn-text">Links</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">4</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-activity"></i>
+                    <span class="btn-text">Activities</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">6</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-printer"></i>
+                    <span class="btn-text">Printers</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">3</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-people"></i>
+                    <span class="btn-text">Users</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">7</span>
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn btn-custom">
+                    <i class="bi bi-chat-dots"></i>
+                    <span class="btn-text">Comments</span>
+                    <span class="badge rounded-pill bg-danger badge-custom">9</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
